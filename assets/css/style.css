@@ -1,9 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Orbitron:wght@400..900&family=Caveat+Brush&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Caveat+Brush&display=swap'); */
 
 :root {
 	/* --ff-heading: 'Caveat Brush', serif; */
-	--ff-body: "Inter", sans-serif;
-	--ff-heading: "Orbitron", sans-serif;
+	--ff-body: "Rubik", sans-serif;
+	--ff-heading: "Rubik", sans-serif;
 	--ff-code: "Fira Code", monospace;
 	--ff-formal: "Knewave", cursive;
 
@@ -45,8 +45,8 @@
 	--spacing-xxl: 8rem;
 
 	/* Landing page */
-	--h1: 700 4rem/1em var(--ff-heading);
-	--h2: 700 2rem/1.2em var(--ff-heading);
+	--h1: 500 4rem/1em var(--ff-heading);
+	--h2: 600 2rem/1.2em var(--ff-heading);
 	--h3: 700 1.5rem/1.2em var(--ff-body);
 	--h4: 700 1rem/1.6em var(--ff-body);
 
@@ -56,7 +56,7 @@
 	--xsmall: 0.5em/2rem var(--ff-body);
 	--quote: italic 1rem/1.6em var(--ff-body);
 
-	--button-font: 700 1rem/1.6em var(--ff-heading);
+	--button-font: 500 1rem/1.6em var(--ff-heading);
 	--link-font: 1rem/1.6rem var(--ff-body);
 	--code-font: 1rem/1.6rem var(--ff-code);
 
@@ -117,6 +117,7 @@ h1 {
 	font: var(--h1);
 	word-break: break-word;
 	overflow-wrap: break-word;
+	text-transform: uppercase;
 }
 
 .title-wrapper {
