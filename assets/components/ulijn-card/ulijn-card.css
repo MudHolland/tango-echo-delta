@@ -1,0 +1,50 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+
+	padding-bottom: 1rem;
+	overflow: hidden;
+	background-color: var(--gray-70);
+	border-radius: var(--spacing-s);
+	box-shadow: 0 4px 8px var(--black);
+	height: auto;
+	width: auto;
+	max-height: 450px;
+	margin-inline: auto;
+	gap: 1rem;
+	transition: box-shadow 0.25s ease, background-color 0.25s ease,
+		scale 0.25s ease;
+}
+
+figure:hover {
+	scale: 1.05;
+}
+
+figure img {
+	width: 100%;
+	object-fit: cover;
+	max-width: 100%;
+	max-height: calc(450px - 4 * var(--spacing-m));
+}
+
+figure figcaption {
+	color: var(--black);
+	padding-inline: var(--spacing-m);
+	opacity: 0.75;
+	font-style: italic;
+}
+
+img {
+	height: 15rem;
+	max-width: 100%;
+}
+
+h4 {
+	text-align: right;
+}

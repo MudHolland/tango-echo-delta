@@ -1,0 +1,29 @@
+<section id="contact">
+  <div class="container flex">
+    <div class="flex-column wide">
+      <div class="title-wrapper">
+        <h2>Contact</h2>
+      </div>
+      <p>Heeft u vragen of wilt u een offerte aanvragen? Neem dan contact met me op via dit formulier.</p>
+    </div>
+    <div class="flex-column">
+      <div class="contact-form">
+        <form action="/assets/contact.php" method="post">
+          <div class="form-group">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="button" type="submit">Verstuur</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

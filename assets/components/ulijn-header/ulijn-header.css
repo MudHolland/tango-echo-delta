@@ -1,0 +1,234 @@
+header {
+	display: flex;
+	align-content: center;
+	height: 120px;
+}
+
+/* .container {
+	height: 100%;
+	max-inline-size: var(--vw-l);
+	margin-inline: auto;
+	width:calc(100vw - 6rem);
+} */
+
+nav {
+	height: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	z-index: 100;
+}
+
+.nav__logo {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: center;
+	text-decoration: none;
+}
+
+.nav__logo img {
+	max-height: 50px;
+}
+
+.nav__logo .wordmark {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--gray-70);
+}
+
+.nav__links {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	/* margin-inline:var(--spacing-m); */
+}
+
+.nav__links ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: var(--spacing-xl);
+	margin: 0;
+	padding: 0;
+}
+
+.nav__links ul li {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav__links a {
+	text-decoration: none;
+	color: var(--gray-70);
+	font-weight: bold;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: color var(--time-m) ease, background-color var(--time-m) ease,
+		border-color var(--time-m) ease, opacity var(--time-m) ease;
+
+	&:hover {
+		color: var(--white);
+		/* text-decoration: underline 2px var(--secondary-500); */
+	}
+}
+
+.nav__links .button {
+	height: auto;
+	color: var(--black);
+	background-color: var(--gray-70);
+	border-color: var(--gray-70);
+
+	&:hover {
+		text-decoration: none;
+		background-color: var(--white);
+		border-color: var(--white);
+		color: var(--black);
+	}
+}
+
+.nav__links ul ul.submenu {
+	display: none;
+	position: absolute;
+	top: 120px;
+	left: calc(-1 * var(--spacing-m) * 2);
+	height: auto;
+	word-break: keep-all;
+	background-color: var(--primary-500);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: var(--spacing-m) 0;
+	border-radius: var(--spacing-xs);
+	min-width: 125px;
+	z-index: 250;
+	align-items: flex-start;
+}
+
+.nav__links ul ul.submenu li a {
+	color: var(--black);
+}
+
+.nav__links ul ul.submenu li a:hover {
+	color: var(--gray-70);
+	text-decoration: none;
+}
+
+.nav__links ul li:hover > ul.submenu {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-l);
+	padding: var(--spacing-l);
+	background-color: var(--white);
+	width: max-content;
+}
+
+.nav__links ul li:hover > a::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	pointer-events: none;
+}
+
+.nav__links ul ul.submenu:hover {
+	display: flex;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30px;
+	height: 24px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 1000;
+	margin-left: var(--spacing-l);
+}
+
+.hamburger__line {
+	width: 100%;
+	height: 3px;
+	background: var(--secondary-900);
+	transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active .hamburger__line:nth-child(1) {
+	transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.active .hamburger__line:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .hamburger__line:nth-child(3) {
+	transform: rotate(-45deg) translate(6px, -5px);
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav__links ul {
+		gap: var(--spacing-l);
+	}
+
+	.buttons {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.nav__links {
+		display: none;
+		position: absolute;
+		top: 120px;
+		left: 0;
+		width: 100%;
+		background: var(--white);
+		flex-direction: column;
+		align-items: center;
+		padding: var(--spacing-l) 0;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		z-index: 999;
+	}
+
+	.nav__links ul {
+		flex-direction: column;
+		/* gap: var(--spacing-m); */
+	}
+
+	.nav__links ul li {
+		height: auto;
+	}
+
+	.nav__links ul ul.submenu {
+		position: static;
+		display: none;
+		background: transparent;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.nav__links ul li:hover > ul.submenu {
+		display: none;
+	}
+
+	.nav__links.active {
+		display: flex;
+	}
+}
