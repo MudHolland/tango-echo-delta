@@ -19,7 +19,7 @@
 #hero:before {
 	content: "";
 	position: absolute;
-	top: -200px;
+	top: -175px;
 	left: -16px;
 	width: 100%;
 	height: calc(100% + 500px); /* extend height */
