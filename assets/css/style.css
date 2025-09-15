@@ -17,8 +17,8 @@
 	--gray-70: hsl(0, 0%, 70%);
 	--gray-90: hsl(0, 0%, 90%);
 
-	--background: var(--black);
-	--foreground: var(--white);
+	--background: var(--white);
+	--foreground: var(--black);
 
 	/* brand colors */
 	--primary-500: hsl(0, 0%, 100%);
@@ -108,7 +108,11 @@ body {
 	overflow-x: hidden;
 	color: var(--foreground);
 	/* background-image: linear-gradient(to bottom, var(--gray-10), black); */
-	background-color: var(--background);
+	background-image: linear-gradient(
+		from top,
+		var(--gray-10),
+		var(--background)
+	);
 	margin: 0;
 	padding: 0;
 }
@@ -231,7 +235,7 @@ section {
 }
 
 section + .light {
-	background-color: var(--gray-05);
+	background-color: var(--gray-90);
 }
 
 .buttons {
@@ -300,7 +304,7 @@ cite {
 
 .button {
 	font: var(--button-font);
-	border: 2px solid var(--gray-70);
+	border: 2px solid var(--gray-50);
 	cursor: pointer;
 	padding: var(--spacing-s) var(--spacing-m);
 	border-radius: var(--spacing-xs);
@@ -308,22 +312,22 @@ cite {
 	width: fit-content;
 	text-decoration: none;
 	position: relative;
-	color: var(--black);
-	background-color: var(--gray-70);
+	color: var(--white);
+	background-color: var(--gray-50);
 	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 	transition: color var(--time-m) ease, border-color var(--time-m) ease,
 		background-color var(--time-m) ease;
 
 	&.outline {
 		background-color: transparent;
-		border-color: var(--gray-70);
-		color: var(--gray-70);
+		border-color: var(--gray-50);
+		color: var(--gray-50);
 	}
 
 	&:hover {
-		background-color: var(--white);
-		border-color: var(--white);
-		color: var(--black);
+		background-color: var(--black);
+		border-color: var(--black);
+		color: var(--white);
 	}
 }
 
@@ -338,9 +342,9 @@ figure {
 
 	padding-bottom: 1rem;
 	overflow: hidden;
-	background-color: var(--gray-70);
+	background-color: var(--white);
 	border-radius: var(--spacing-s);
-	box-shadow: 0 4px 8px var(--black);
+	box-shadow: 0 4px 8px var(--gray-50);
 	height: auto;
 	width: auto;
 	max-height: 450px;
@@ -365,7 +369,7 @@ figure figcaption {
 	color: var(--black);
 	padding-inline: var(--spacing-m);
 	opacity: 0.75;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 .angle {
@@ -435,8 +439,8 @@ figure figcaption {
 .carousel-control {
 	content: "a";
 	position: relative;
-	background-color: var(--gray-70);
-	color: black;
+	background-color: var(--gray-50);
+	color: var(--white);
 	width: 2.5rem;
 	height: 2.5rem;
 	border-radius: 1.5rem;
@@ -459,7 +463,6 @@ figure figcaption {
 	text-align: center;
 	font-size: 2rem;
 	margin-top: -0.5rem;
-	color: var(--black);
 }
 
 .next::before {
@@ -467,7 +470,7 @@ figure figcaption {
 }
 
 .carousel-control:hover {
-	background-color: var(--white);
+	background-color: var(--black);
 }
 
 .carousel-indicators {

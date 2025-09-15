@@ -29,6 +29,13 @@ nav {
 	gap: 2rem;
 	align-items: center;
 	text-decoration: none;
+	color: var(--gray-50);
+	transition: color var(--time-m) ease, background-color var(--time-m) ease,
+		border-color var(--time-m) ease, opacity var(--time-m) ease;
+
+	&:hover {
+		color: var(--black);
+	}
 }
 
 .nav__logo img {
@@ -37,8 +44,7 @@ nav {
 
 .nav__logo .wordmark {
 	font-size: 1.25rem;
-	font-weight: 700;
-	color: var(--gray-70);
+	font-weight: 600;
 }
 
 .nav__links {
@@ -67,7 +73,7 @@ nav {
 
 .nav__links a {
 	text-decoration: none;
-	color: var(--gray-70);
+	color: var(--gray-50);
 	font-weight: bold;
 	height: 100%;
 	display: flex;
@@ -76,22 +82,18 @@ nav {
 		border-color var(--time-m) ease, opacity var(--time-m) ease;
 
 	&:hover {
-		color: var(--white);
+		color: var(--black);
 		/* text-decoration: underline 2px var(--secondary-500); */
 	}
 }
 
 .nav__links .button {
 	height: auto;
-	color: var(--black);
-	background-color: var(--gray-70);
-	border-color: var(--gray-70);
+	color: var(--white);
 
 	&:hover {
 		text-decoration: none;
-		background-color: var(--white);
-		border-color: var(--white);
-		color: var(--black);
+		color: var(--white);
 	}
 }
 

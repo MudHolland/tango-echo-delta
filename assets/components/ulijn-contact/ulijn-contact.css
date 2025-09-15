@@ -1,5 +1,5 @@
 .contact-form {
-	background-color: var(--gray-30);
+	background-color: var(--gray-90);
 	padding: var(--spacing-l);
 	border-radius: var(--spacing-xs);
 	width: 100%;
@@ -15,7 +15,7 @@
 
 .contact-form label {
 	font-weight: 700;
-	color: var(--black);
+	color: var(--gray-50);
 	margin-bottom: var(--spacing-s);
 	text-transform: uppercase;
 }
@@ -25,7 +25,7 @@
 	box-sizing: border-box;
 	/* width: 100%; */
 	padding: var(--spacing-s);
-	border: 2px solid var(--black);
+	border: 2px solid var(--white);
 	border-radius: var(--spacing-xs);
 	font-size: 1rem;
 	font-family: inherit;
@@ -45,13 +45,5 @@
 @media only screen and (max-width: 500px) {
 	.contact-form {
 		width: calc(100vw - 2rem);
-	}
-}
-
-.button {
-	border: 2px solid var(--black);
-
-	&:hover {
-		border: 2px solid black;
 	}
 }
