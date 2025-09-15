@@ -17,9 +17,6 @@
 	--gray-70: hsl(0, 0%, 70%);
 	--gray-90: hsl(0, 0%, 90%);
 
-	--background: var(--white);
-	--foreground: var(--black);
-
 	/* brand colors */
 	--primary-500: hsl(0, 0%, 100%);
 	--primary-100: hsl(from var(--primary-500) h s 95%);
@@ -106,13 +103,9 @@ body {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	overflow-x: hidden;
-	color: var(--foreground);
+	color: var(--gray-05);
 	/* background-image: linear-gradient(to bottom, var(--gray-10), black); */
-	background-image: linear-gradient(
-		from top,
-		var(--gray-10),
-		var(--background)
-	);
+	background-image: linear-gradient(from top, var(--gray-10), var(--white));
 	margin: 0;
 	padding: 0;
 }
