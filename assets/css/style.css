@@ -42,7 +42,7 @@
 	--spacing-xxl: 8rem;
 
 	/* Landing page */
-	--h1: 500 4rem/1em var(--ff-heading);
+	--h1: 600 4rem/1em var(--ff-heading);
 	--h2: 600 2rem/1.2em var(--ff-heading);
 	--h3: 700 1.5rem/1.2em var(--ff-body);
 	--h4: 700 1rem/1.6em var(--ff-body);
@@ -115,6 +115,7 @@ h1 {
 	word-break: break-word;
 	overflow-wrap: break-word;
 	text-transform: uppercase;
+	letter-spacing: 0.5rem;
 }
 
 .title-wrapper {
@@ -128,6 +129,8 @@ h2 {
 	display: flex;
 	font: var(--h2);
 	text-align: center;
+	letter-spacing: 0.25rem;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -306,10 +309,11 @@ cite {
 	text-decoration: none;
 	position: relative;
 	color: var(--white);
+	letter-spacing: 0.1rem;
 	background-color: var(--gray-50);
 	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 	transition: color var(--time-m) ease, border-color var(--time-m) ease,
-		background-color var(--time-m) ease;
+		background-color var(--time-m) ease, letter-spacing var(--time-m) ease;
 
 	&.outline {
 		background-color: transparent;
@@ -321,6 +325,7 @@ cite {
 		background-color: var(--black);
 		border-color: var(--black);
 		color: var(--white);
+		letter-spacing: 0.25rem;
 	}
 }
 
