@@ -1,9 +1,32 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Caveat+Brush&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarpanch:wght@400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarina&family=Yuji+Boku&display=swap");
 
+@font-face {
+	font-family: "Daytona";
+	src: url("/assets/fonts/DaytonaPro-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Daytona";
+	src: url("/assets/fonts/DaytonaPro-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Daytona";
+	src: url("/assets/fonts/DaytonaPro-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 :root {
 	/* --ff-heading: 'Caveat Brush', serif; */
-	--ff-body: "Rubik", sans-serif;
-	--ff-heading: "Rubik", sans-serif;
+	--ff-body: "Daytona", sans-serif;
+	--ff-heading: "Sarpanch", sans-serif;
 	--ff-code: "Fira Code", monospace;
 	--ff-formal: "Knewave", cursive;
 
@@ -25,6 +48,10 @@
 	--secondary-500: hsl(0, 0%, 0%);
 	--secondary-100: hsl(from var(--secondary-500) h s 97%);
 	--secondary-900: hsl(from var(--secondary-500) h s 15%);
+
+	--brand-gray: #949494;
+	--brand-dark-gray: #585858;
+	--brand-orange: hsl(25, 100%, 50%);
 
 	/* Viewport sizes */
 
